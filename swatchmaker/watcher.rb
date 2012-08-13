@@ -8,7 +8,7 @@ dw.interval = 1.0
 dw.add_observer do |*args|
   args.each do |event|
     if /less/ =~ event.path
-     `make bootswatch`
+     `make OUTPUT_PATH=~/Sites/openblight/vendor/assets/stylesheets/ bootswatch`
       puts "#{Time.now.strftime("%I:%M:%S")} make bootswatch (since #{event.path} #{event.type})"
     end
   end

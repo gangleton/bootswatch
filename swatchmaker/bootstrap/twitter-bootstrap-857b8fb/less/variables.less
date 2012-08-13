@@ -39,14 +39,14 @@
 
 // Links
 // -------------------------
-@linkColor:             #F1601D;
-@linkColorHover:        #62C1CC;
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       "Kreon", "Times New Roman", Times, serif;
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
 
 @baseFontSize:          13px;
@@ -146,17 +146,17 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @white;
-@navbarBackgroundHighlight:       @white;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @linkColor;
-@navbarLinkColorHover:            #62C1CC;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @white;
+@navbarLinkBackgroundActive:      @navbarBackground;
 
-@navbarSearchBackground:          lighten(@white, 25%);
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;
 @navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
 @navbarSearchPlaceholderColor:    #ccc;
