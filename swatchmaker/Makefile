@@ -5,8 +5,8 @@
 OUTPUT_PATH = swatch
 
 bootswatch:
-	lessc swatchmaker.less > ${OUTPUT_PATH}/bootstrap.css
-	lessc --compress  swatchmaker.less > ${OUTPUT_PATH}/bootstrap.min.css
+	/usr/local/lib/node_modules/less/bin/lessc swatchmaker.less > ${OUTPUT_PATH}/bootstrap.css
+	/usr/local/lib/node_modules/less/bin/lessc --compress  swatchmaker.less > ${OUTPUT_PATH}/bootstrap.min.css
 
 bootstrap:
 	-test -d bootstrap && rm -r bootstrap
